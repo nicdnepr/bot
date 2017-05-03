@@ -1,0 +1,11 @@
+{
+  "name": "nicdnepr/bot",
+  "description": "bot for downloading images",
+  "require": {
+    "php": ">=5.4",
+    "joshcam/mysqli-database-class": "dev-master"
+  },
+  "autoload": {
+    "files": ["Queue.php", "DB.php"]
+  }
+}

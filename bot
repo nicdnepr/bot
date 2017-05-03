@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+require 'vendor/autoload.php';
+
+$queue = new \bot\Queue();
+
+switch ($argv[1]) {
+
+    case 'schedule':
+        $queue->schedule($argv[2]);
+        break;
+
+    case 'download':
+        $queue->download();
+        break;
+
+    default:
+        echo 'wrong command';
+}
