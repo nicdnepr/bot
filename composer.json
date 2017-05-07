@@ -6,6 +6,8 @@
     "joshcam/mysqli-database-class": "dev-master"
   },
   "autoload": {
-    "files": ["Queue.php", "DB.php"]
+    "psr-4": {
+        "bot\\": ""
+    }
   }
 }

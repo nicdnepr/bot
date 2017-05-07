@@ -37,13 +37,13 @@ class Queue
 
         foreach ($urls as $url) {
 
-            if (strpos($url, 'http') === false) {
-                continue;
+            if (strpos($url, 'http') === 0) {
+                $this->_db->insert('queue', [
+                    'url' => $url
+                ]);
             }
 
-            $this->_db->insert('queue', [
-                'url' => $url
-            ]);
+            
         }
     }
 
